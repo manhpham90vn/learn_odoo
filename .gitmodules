@@ -1,0 +1,4 @@
+[submodule "odoo17"]
+	path = odoo17
+	url = git@github.com:odoo/odoo.git
+	branch = 17.0
