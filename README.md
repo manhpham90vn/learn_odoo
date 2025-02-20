@@ -15,7 +15,7 @@ git submodule update --init --depth 1 --recursive
 ## Build odoo
 
 ```shell
-sudo apt install postgresql postgresql-client libpq-dev
+sudo apt install postgresql postgresql-client libpq-dev libldap2-dev libsasl2-dev
 sudo ./odoo17/setup/debinstall.sh
 npm install -g rtlcss
 wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-3/wkhtmltox_0.12.6.1-3.jammy_amd64.deb -P /tmp
@@ -67,3 +67,7 @@ python odoo17/odoo-bin scaffold player addons -t default
 ```shell
 http://localhost:8069/web/database/manager
 ```
+
+## Note
+
+- Need to create at least 1 database for database/manager to work
