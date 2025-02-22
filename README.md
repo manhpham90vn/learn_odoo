@@ -44,11 +44,19 @@ ALTER ROLE admin CREATEDB;
 ```shell
 python -m venv venv
 source ./venv/bin/activate
-pip install inotify
+pip install inotify ipdb
 pip install -r odoo17/requirements.txt
 ```
 
 ## Run odoo
+
+- init odoo
+
+```shell
+python odoo17/odoo-bin -i base -d odoo -c odoo.conf
+```
+
+- run odoo for select database
 
 ```shell
 python odoo17/odoo-bin --dev=all --log-web --log-sql -c odoo.conf
@@ -71,3 +79,9 @@ http://localhost:8069/web/database/manager
 ## Note
 
 - Need to create at least 1 database for database/manager to work
+
+- Debug python
+
+```python
+import ipdb; ipdb.set_trace()
+```
