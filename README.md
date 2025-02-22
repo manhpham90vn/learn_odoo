@@ -98,3 +98,5 @@ http://localhost:8069/web/database/manager
 ```python
 import ipdb; ipdb.set_trace()
 ```
+
+- Active developer mode & auto reload assets in browser with Chrome Extension [Odoo Debug](https://chromewebstore.google.com/detail/odoo-debug/hmdmhilocobgohohpdpolmibjklfgkbi)
