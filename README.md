@@ -30,12 +30,25 @@ psql
 ```
 
 ```sql
+-- Create role with login and password
 CREATE ROLE admin WITH LOGIN PASSWORD 'admin';
+
+-- List roles
 \du
+
+-- Create database with owner
 CREATE DATABASE odoo OWNER admin;
+       
+-- List databases
 \l
+
+-- Grant all privileges to role
 ALTER ROLE admin WITH SUPERUSER;
+      
+-- Grant create database to role
 ALTER ROLE admin CREATEDB;
+      
+-- Quit
 \q
 ```
 
