@@ -83,7 +83,7 @@ python odoo17/odoo-bin --dev=all --log-web --log-sql -c odoo.conf
 python odoo17/odoo-bin scaffold player addons -t default
 ```
 
-- Database
+- Select Database
 
 ```shell
 http://localhost:8069/web/database/manager
