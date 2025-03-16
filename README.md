@@ -5,6 +5,12 @@
 - [pyenv](https://github.com/pyenv/pyenv)
 - [nvm](https://github.com/nvm-sh/nvm)
 
+## Clone
+
+```shell
+git clone --depth 1 --branch 17.0 git@github.com:odoo/odoo.git odoo17.0
+```
+
 ## Update source
 
 ```shell
