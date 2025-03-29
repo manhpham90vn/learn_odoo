@@ -8,7 +8,7 @@
 ## Clone
 
 ```shell
-git clone --depth 1 --branch 17.0 git@github.com:odoo/odoo.git odoo17.0
+git clone --depth 1 --branch 17.0 git@github.com:odoo/odoo.git odoo17.0.0
 ```
 
 ## Update source
@@ -22,7 +22,7 @@ git submodule update --init --depth 1 --recursive
 
 ```shell
 sudo apt install postgresql postgresql-client libpq-dev libldap2-dev libsasl2-dev
-sudo ./odoo17/setup/debinstall.sh
+sudo ./odoo17.0/setup/debinstall.sh
 npm install -g rtlcss
 wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-3/wkhtmltox_0.12.6.1-3.jammy_amd64.deb -P /tmp
 sudo apt install -y /tmp/wkhtmltox_0.12.6.1-3.jammy_amd64.deb
@@ -64,7 +64,7 @@ ALTER ROLE admin CREATEDB;
 python -m venv venv
 source ./venv/bin/activate
 pip install inotify ipdb
-pip install -r odoo17/requirements.txt
+pip install -r odoo17.0/requirements.txt
 ```
 
 ## Run odoo
@@ -72,13 +72,13 @@ pip install -r odoo17/requirements.txt
 - init odoo
 
 ```shell
-python odoo17/odoo-bin -i base -d odoo -c odoo.conf
+python odoo17.0/odoo-bin -i base -d odoo -c odoo.conf
 ```
 
 - run odoo for select database
 
 ```shell
-python odoo17/odoo-bin --dev=all --log-web --log-sql -c odoo.conf
+python odoo17.0/odoo-bin --dev=all --log-web --log-sql -c odoo.conf
 ```
 
 ## Command
@@ -86,7 +86,7 @@ python odoo17/odoo-bin --dev=all --log-web --log-sql -c odoo.conf
 - Create module
 
 ```shell
-python odoo17/odoo-bin scaffold player addons -t default
+python odoo17.0/odoo-bin scaffold player addons -t default
 ```
 
 - Select Database
