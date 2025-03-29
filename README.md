@@ -8,7 +8,7 @@
 ## Clone
 
 ```shell
-git clone --depth 1 --branch 17.0 git@github.com:odoo/odoo.git odoo17.0.0
+git clone --depth 1 --branch 17.0 git@github.com:odoo/odoo.git odoo17.0
 ```
 
 ## Update source
